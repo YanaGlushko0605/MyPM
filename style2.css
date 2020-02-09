@@ -129,21 +129,26 @@ section {
 legend {
 	position: absolute;
 	padding-left: 80px;
-	font-size: 18px;
+	font-size: 18px; 
 }
 fieldset {
 	background-color: #e9e8e8;
 	border: none;
 	padding: 4px 15px 20px;
 }
-label {
+.one-form_row label {
 	text-align: left;
 	display: block;
 	margin-top: 19px;
 	font-size: 18px;
 }
 
-input {
+.one-form_row label, legend, h1, h4, .about, .story, .price, .case, .spec {
+font-family: High Tower Text, sample;
+font-weight: normal;
+}
+
+.one-form_row input {
 	width: 100%;
 	border: none;
 	padding: 6px;
@@ -161,7 +166,7 @@ input {
 .wine_one {
 	width: 430px;
 	height: 490px;
-	background: #000;
+	background: #2d2d2d;
 	color: #fff;
 	position: absolute;
 	left: 20px;
@@ -170,7 +175,7 @@ input {
 .wine_two {
 	width: 430px;
 	height: 490px;
-	background: #000;
+	background: #2d2d2d;
 	color: #fff;
 	position: absolute;
 	left: 20px;
@@ -180,15 +185,13 @@ h4 {
 	text-align: center;
 	font-size: 24px;
 	color: #fff;
-	font-weight: normal;
-	font-family: High Tower Text, sample;
 }
 .wine_one img {
-    width: -webkit-fill-available;
+    width: inherit;
     height: 200px;
 }	
 .wine_two img {
-    width: -webkit-fill-available;
+    width: inherit;
     height: 200px;
 }
 p {
@@ -196,25 +199,21 @@ p {
 }
 .story {
 	font-size: 14px;
-	font-family: High Tower Text, sample;
     padding: 15px 15px 0px;
     line-height: 16px;
 }
 .price  {
 	font-size: 18px;
-	font-family: High Tower Text, sample;
 	padding-left: 17px;
 	padding-top: 24px;
 }
 .case {
 	font-size: 18px;
-	font-family: High Tower Text, sample;
 	padding-left: 17px;
 	padding-top: 10px;
 }
 .spec {
 	font-size: 18px;
-	font-family: High Tower Text, sample;
 	padding-left: 17px;
 	padding-top: 4px;
 }
@@ -225,11 +224,36 @@ p {
 	position: relative;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
+.middle {
+	display: flex;
+	position: relative;
+	width: 430px;
+	justify-content: space-between;
+}
+.mid_3 img {
+	width: 85px;
+	height: 85px;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+.mid_2 {
+	margin-top: 20px;
+}
+.mid_2 label {
+	margin-right: 10px;
+	margin-left: 25px;
+	font-family: Neutra Text Demi;
+    font-size: 18px;
+}
+.mid_2 input {
+	width: 42px;
+	height: 22px;
+	font-family: Neutra Text Demi;
+	font-size: 18px;
+}
 h1 {
 	font-size: 60px;
 	color: #4b4b4b;
-	font-weight: normal;
-	font-family: High Tower Text, sample;
 	text-transform: uppercase;
 	position: absolute;
 	line-height: 10px;
@@ -288,16 +312,10 @@ footer {
 	margin: 0 auto;
 	display: flex;
 	position: relative;
+	justify-content: space-between;
 }	
 .about {
 	font-size: 18px;
-	font-weight: normal;
-	font-family: High Tower Text, sample;
-}
-h5::after {
-	content: "______________________________";
-	position: absolute;
-	left: 0%;
 }
 .history li {
 	list-style-type: none;
@@ -307,16 +325,63 @@ h5::after {
 	text-decoration: none;
 	color: #fff;
 }
-ul.history {
+ul.history, ul.social {
 	margin-left: -40px;
     margin-top: -25px;
 }
-.fot_two {
-	position: absolute;
-	left: 39%;
+.social li {
+	list-style-type: none;
+	position: relative;
 }
 .fot_th {
+	margin-right: 40px;
+} 
+.mid_2 p input {
+	color: #fff;
+	background: #2d2d2d;
+	width: 100px;
+	border: none;
+	margin-top: 14px;
+	margin-left: 18px;
+}
+.fot_one, .fot_two, .fot_th {
+	width: 210px;
+}
+h5 {
+	border-bottom: 1px solid #fff;
+}
+.let_soc {
+	font-family: Neutra Text Book, sample;
+    font-weight: normal;
+    font-size: 14px;
     position: absolute;
-    left: 77%;
-    color: #fff;
-}    
+    top: 15%;
+    left: 35%;
+}
+.phon_soc {
+	font-family: High Tower Text, sample;
+    font-weight: normal;
+    font-size: 14px;
+    position: absolute;
+    left: 35%;
+    top: 10px;
+}
+.fot_th img {
+	width: 50px;
+	height: 50px;
+}
+#fc {
+	position: absolute;
+	left: 74%;
+	top: 43%;
+}   
+#tw {
+    position: absolute;
+    left: 81%;
+    top: 43%;
+}
+#pn { 
+	position: absolute;
+	left: 88%;
+	top: 43%;
+}
