@@ -16,38 +16,6 @@ header {
 .container img {
 	margin-top: 1px;
 }
-.slider {
-	display: table;
-	width: 1200px;
-	margin: 0 auto;
-}
-.backgr_overflow_container {
-	overflow: hidden;
-}
-.backgr_container {
-	position: relative;
-	max-width: 1200px;
-	height: 1610px;
-	margin: 50px auto 0 auto;
-}
-.backgr_img_left {
-	position: absolute;
-	top: -12%;
-	left: -35.5%;
-	opacity: 0.2;
-	width: 80%;
-	max-width: 950px;
-	z-index: -1;
-}
-.backgr_img_right {
-	position: absolute;
-	bottom: -15%;
-	right: -45%;
-	opacity: 0.2;
-	width: 80%;
-	max-width: 950px;
-	z-index: -1;
-}
 .container {
 	margin: 0 auto;
 	width: 960px;
@@ -69,10 +37,10 @@ nav li {
 	display: block;
 	margin-left: 5px;
 }
-.menu{
+.menu {
 	margin-top: 14px;
 }
-.menu li{
+.menu li {
 	margin-left: 25px;
 }
 nav li a {
@@ -82,12 +50,21 @@ nav li a {
 	font-size: 15px;
 	padding: 0 0 0 0;
 }
+nav li a:hover {
+	color: #fff;
+}
+.slider {
+	display: table;
+	width: 1200px;
+	margin: 0 auto;
+}
 section {
 	width: 960px;
 	height: 270px;
 	background-color: rgba(255, 255, 255, 0.7);
 	margin: 0 auto;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	margin-top: 36px;
 }
 .main {
 	float: left;
@@ -107,6 +84,9 @@ section {
 .main a {
 	text-decoration: none;
 	color: #333333;
+}
+.main a:hover {
+	color: #00008B;
 }
 .main:last-child {
 	float: right;
@@ -162,7 +142,7 @@ font-weight: normal;
     display: flex;
     width: 960px;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 36px auto;
 }
 .wine_one {
 	width: 430px;
@@ -287,19 +267,16 @@ h1 {
 	background-image: url('img/doyen.jpg');
 }
 .delille img {
-	position: absolute;
-    left: 14%;
-    bottom: 31%;
+    margin-top: 135px;
+    margin-left: 28px; 
 }
 .grand img {
-	position: absolute;
-    left: 41%;
-    bottom: 31%;
+    margin-left: 28px;
+    margin-top: 118px; 
 }
 .doyen img {
-	position: absolute;
-	left: 68%;
-	bottom: 30%;
+    margin-left: 28px;
+    margin-top: 97px;
 }
 
 footer {
@@ -335,6 +312,28 @@ ul.history, ul.social {
 	list-style-type: none;
 	position: relative;
 }
+.icon-fc {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	background-image: url('img/sprite.svg');
+	margin-right: 15px;
+}
+.icon-tw {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	background-image: url('img/sprite.svg');
+	margin-right: 15px;
+	background-position: -47px 0;
+}
+.icon-pin {
+	display: inline-block;
+	height: 45px;
+	width: 46px;
+	background-image: url('img/sprite.svg');
+	background-position: -94px 0;
+}
 .fot_th {
 	margin-right: 40px;
 } 
@@ -368,9 +367,19 @@ h5 {
     left: 35%;
     top: 10px;
 }
-.fot_th img {
-	width: 50px;
-	height: 50px;
-	margin-right: 15px;
-	margin-top: -17px;
+.icon-letter {
+	display: inline-block;
+	height: 34px;
+	width: 45px;
+	margin-top: 9px;
+	background-image: url('img/sprite2.svg');
 }
+.icon-phone {
+	display: inline-block;
+	height: 43px;
+	width: 13px;
+	margin-left: 13px;
+	background-position: -46px 100px;
+	background-image: url('img/sprite2.svg');
+}
+
